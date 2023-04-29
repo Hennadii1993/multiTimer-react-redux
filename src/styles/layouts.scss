@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import "./var.scss";
+
+body {
+  margin: 10px;
+  font-family: "Roboto Mono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgba(231, 233, 235, 0.65);
+}
+
+html,
+body {
+  color: $text-color;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
+  }
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin-bottom: 3vh;
+  width: 100%;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.clock.buttons {
+  /* clock and buttons div */
+  letter-spacing: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+// INPUT - TIMEPICKER
+
+// button.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root,
+// div.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root,
+// label.css-1kty9di-MuiFormLabel-root-MuiInputLabel-root,
+// fieldset.css-1o2jng6-MuiOutlinedInput-notchedOutline,
+// .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root:hover {
+//   border-color: rgb(246, 234, 234);
+//   color: rgb(246, 234, 234);
+// }
+
+// .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root:hover
+//   .MuiOutlinedInput-notchedOutline {
+//   border-color: white;
+// }
